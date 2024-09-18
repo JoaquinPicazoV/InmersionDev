@@ -1,0 +1,125 @@
+/* CSS PURO PARA LA WEB DE GENERACIÓN DE CONTRASEÑA */
+
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}
+
+.bg {
+    background-image: url("../GeneradorDeContraseñas/img/bgGenPwrd.png");
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.box1 {
+    background-color: rgb(255, 255, 255);
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+#ins {
+    text-align: left;
+}
+
+.box2 {
+    background-color: rgb(255, 255, 255);
+    display: none;
+    place-items: center;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+
+}
+
+.txt {
+    display: flex;
+    width: 89%;
+    height: 20px;
+    justify-content: center;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+.buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.long {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    text-align: center;
+}
+
+.options {
+    display: grid;
+    place-items: center;
+    width: 90%;
+}
+
+.op {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.gen {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#mayus,
+#minus,
+#num,
+#sim {
+    width: 7%;
+    cursor: pointer;
+}
+
+#copy {
+    background-color: rgb(152, 199, 81);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#clear {
+    background-color: rgb(205, 91, 91);
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#zenitsu {
+    display: flex;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 20px;
+}

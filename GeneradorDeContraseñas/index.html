@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!------------------------------------------------------------------- HEAD ------------------------------------------------------------>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Generador de contraseñas</title>
+    <script src="https://kit.fontawesome.com/98fb854785.js" crossorigin="anonymous"></script>
+</head>
+
+<!-------------------------------------------------------------------- BODY ---------------------------------------------------------->
+<body>
+    <!-- Interfaz de configuracion para la contraseña aleatoria -->
+    <div class="bg">
+        <div class="box1" id="box1">
+            <h1 id="title">Generador de Contraseñas</h1>
+            <span id="evaluacion"></span>
+
+            <div class="long" id="long">
+                <p id="ins">Ingrese el largo que desea en su contraseña:<br>(mínimo 6 y máximo 20 carácteres)</p>
+                <input type="text" class="input" id="input">
+            </div>
+            <div class="options" id="options">
+                <div class="op">
+                    <p>Incluir Mayúsculas</p>
+                    <input type="checkbox" id="mayus">
+                </div>
+
+                <div class="op">
+                    <p>Incluir Minúsculas</p>
+                    <input type="checkbox" id="minus">
+                </div>
+
+                <div class="op">
+                    <p>Incluir Números</p>
+                    <input type="checkbox" id="num">
+                </div>
+
+                <div class="op">
+                    <p>Incluir Símbolos</p>
+                    <input type="checkbox" id="sim">
+                </div>
+            </div>
+
+            <button id="gen" class="gen" onclick="validarInputs()"><i class="fa-solid fa-play"></i> Generar
+                Contraseña</button>
+        </div>
+
+        <!-- Interfaz de resultado de contraseña aleatoria -->
+        <div class="box2" id="box2">
+            <h1 id="title">Generador de Contraseñas</h1>
+            <span class="txt" id="txt"></span>
+            <div class="buttons" id="buttons">
+                <button id="copy" onclick="copy()"><i class="fa-solid fa-copy"></i> Copiar</button>
+                <button id="clear" onclick="limpiar()"><i class="fa-solid fa-trash"></i> Limpiar</button>
+            </div>
+            <img src="../GeneradorDeContraseñas/img/zenitsu.jpg" id="zenitsu">
+        </div>
+    </div>
+    <!-- JS EXTERNO -->
+    <script src="../GeneradorDeContraseñas/index.js"></script>
+</body>
+
+</html>
